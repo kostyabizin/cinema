@@ -5,7 +5,7 @@ $(function () {
     var canvasHeight = parentBlock.height() - 4 * rem
     var canvasWidth = parentBlock.width() - 2 * rem
     var img = new Image()
-    img.src = './../img/canvas_logo.png';
+    img.src = './../img/canvas.png';
     var canvas
     var ctx
 
