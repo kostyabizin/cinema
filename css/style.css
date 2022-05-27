@@ -2968,7 +2968,7 @@ body.mob-nav-is-opened {
 
 .about__parnter-image img {
   position: absolute;
-  top: 0;
+  top: -.2rem;
   right: 0;
   width: 2rem;
   height: 2rem;
