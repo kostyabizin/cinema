@@ -1,0 +1,232 @@
+.field-error .form__text-input,
+.field-error .form__textarea,
+.field-error .form__text-span,
+.field-error .form__counter {
+  border: 1px solid #EE00FF;
+  color: #EE00FF;
+}
+
+.field-error .form__text-input::placeholder,
+.field-error .form__textarea::placeholder {
+  color: #EE00FF;
+}
+
+.field-error .form__counter {
+  border-top: 0;
+}
+
+.field-error .form__text-span {
+  border-right: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__text-input,
+.form__textarea {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  padding: 2rem;
+  border: .1rem solid #000;
+  color: #000;
+  background-color: #fff;
+  transition: .21s;
+  font-size: 1.6rem;
+  border-radius: 0;
+}
+
+.form__text-download {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form__text-span {
+  display: inline-flex;
+  align-items: center;
+  width: 32%;
+  min-height: 6rem;
+  flex-shrink: 0;
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  color: #000;
+  border: .1rem solid #000;
+  border-right: 0;
+  transition: .21s;
+}
+
+.form__text-span--lg {
+  width: 70%;
+}
+
+.form__textarea {
+  align-items: flex-start;
+  height: 23rem;
+  line-height: 1.3;
+  resize: none;
+  overflow: auto;
+}
+
+.form__text-input::placeholder,
+.form__textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.form__text-input:focus::-webkit-input-placeholder,
+.form__textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form__text-input:focus:-moz-placeholder,
+.form__textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 4-18 */
+
+.form__text-input:focus::-moz-placeholder,
+.form__textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 19+ */
+
+.form__text-input:focus:-ms-input-placeholder,
+.form__textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.form__field {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.form__counter {
+  padding: 1rem 2rem;
+  border: .1rem solid var(--dark-color);
+  border-top: 0;
+}
+
+.form__field + .form__field {
+  margin-top: 2rem;
+}
+
+.form__submit {
+  display: inline-flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 22rem;
+  height: 6rem;
+  margin-top: 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: .1rem solid var(--dark-color);
+  background-color: #fff;
+}
+
+.form__link {
+  display: inline-flex;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.form__description {
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+.form__input-wrap {
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.form-error-tip {
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #EE00FF;
+  text-align: center;
+  display: none;
+  margin: 0 auto;
+}
+
+.form-error-tip::before {
+  content: '';
+  position: absolute;
+  width: 2.4rem;
+  height: 2rem;
+  top: 50%;
+  left: -4rem;
+  transform: translate(0, -50%);
+  background-image: url('/img/icons/attention.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.form-error .form-error-tip {
+  display: block;
+}
+
+.field-error-tip {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translate(0, -50%);
+}
+
+.field-error .field-error-tip {
+  display: block;
+}
+
+.form__radio-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 2rem;
+  border: .1rem solid #000
+}
+
+.form-login {
+  flex: 1 0 auto;
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-top: 18rem;
+}
+
+.form-registration {
+  width: 100%;
+}
+
+.form-login, .form-registration{
+  display: none;
+}
+
+.form.visible {
+  display: flex;
+}
+
+.custom-checkbox__label:not(:first-of-type) {
+  margin-left: 4rem;
+}

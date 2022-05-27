@@ -1,0 +1,262 @@
+@@include('blocks/header.html')
+<section class="questionnaire section__content">
+    @@include('blocks/leftside.html')
+    <div class="questionnaire__rightside section__rightside">
+        <div class="section__info-block js-custom-scroll">
+            <div class="section__info-item">
+                <div class="section__info-header">
+                    <span class="section__info-num">
+                        1
+                    </span>
+                    <p class="section__info-paragraph">
+                        Подача заявки
+                    </p>
+                    <p class="section__info-fullprice">
+                        Сумма: <span> 0 ₽ </span>
+                    </p>
+                </div>
+                <div class="section__info-body">
+                    <form class="form form-questionnaire">
+                        <div class="form__field">
+                            <span class="form__text-span">
+                                Категория
+                            </span>
+                            <div class="form__radio-group">
+                                <input type="radio" name="category" id="common" class="custom-checkbox__input" checked>
+                                <label class="custom-checkbox__label" for="common">
+                                    Основная категория
+                                </label>
+                                <input type="radio" name="category" id="young" class="custom-checkbox__input">
+                                <label class="custom-checkbox__label" for="young">
+                                    Young Talent
+                                </label>
+                            </div>
+                        </div>
+                        <div class="questionnaire__item js-questionnaire-new">
+                            <div class="questionnaire__header">
+                                <span class="questionnaire__item-num">
+                                    1
+                                </span>
+                                <p class="questionnaire__item-paragraph">
+                                    Работа №1
+                                </p>
+                                <a href="#" class="questionnaire__item-link js-clear-input">
+                                    Очистить
+                                </a>
+                            </div>
+                            <div class="questionnaire__body">
+                                <div class="form__field">
+                                    <span class="form__text-span">
+                                        Номинация
+                                    </span>
+                                    <div class="dropdown__menu">
+                                        <div class="dropdown__link">
+                                            <input id="nomination" type="text" data-type="txt" data-required="true"
+                                                name="nomination" class="form__text-input js-dropdown-input" placeholder="Выберите категорию"
+                                                autocomplete="off" readonly>
+                                            <div class="field-error-tip">
+                                            <img src="./img/icons/attention.svg" alt=""></div>
+                                            
+                                            <label for="nomination" class="icon">
+                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M26.5093 13.7681L17.9912 22.25L9.50932 13.732" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </label>
+                                        </div>
+                                        <ul class="dropdown__list">
+                                            <li class="option js-dropdown-option" data-value="Спортивный">Спортивный</li>
+                                            <li class="option js-dropdown-option" data-value="видеоролик">видеоролик</li>                                
+                                            <li class="option" data-value="">Спортивный видеоролик</li>                                
+                                            <li class="option" data-value="">Спортивный видеоролик</li>                                
+                                            <li class="option" data-value="">Спортивный видеоролик</li>                                
+                                            <li class="option" data-value="">Спортивный видеоролик</li>                                
+                                            <li class="option" data-value="">Спортивный видеоролик</li>                                
+                                            <li class="option" data-value="">Спортивный видеоролик</li>                                
+                                            <li class="option" data-value="">Спортивный видеоролик</li>                                
+                                            <li class="option" data-value="">Спортивный видеоролик</li>                                
+                                            <li class="option" data-value="">Спортивный видеоролик</li>                                
+                                            <li class="option" data-value="">Спортивный видеоролик</li>                                
+                                            <li class="option" data-value="">Спортивный видеоролик</li>                                
+                                            <li class="option" data-value="">Спортивный видеоролик</li>                                
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <span class="form__text-span">
+                                        Название работы
+                                    </span>
+                                    <input id="project-name" type="text" data-type="txt" data-required="true"
+                                        name="project-name" class="form__text-input" placeholder="Введите название"
+                                        autocomplete="off">
+                                    <div class="field-error-tip"><img src="./img/icons/attention.svg" alt=""></div>
+                                </div>
+                                <div class="form__field">
+                                    <span class="form__text-span">
+                                        Ссылка на работу
+                                    </span>
+                                    <input id="url" type="text" data-type="url" data-required="true" name="url"
+                                        class="form__text-input" placeholder="Укажите ссылку" autocomplete="off">
+                                    <div class="field-error-tip"><img src="./img/icons/attention.svg" alt=""></div>
+                                </div>
+                                <p class="form__description">
+                                    Ссылки принимаются на Google drive, Яндекс Диск, Vimeo, Youtube
+                                </p>
+                                <div class="form__field">
+                                    <span class="form__text-span">
+                                        Участники
+                                    </span>
+                                    <div class="wrap">
+                                        <textarea id="team" type="text" data-type="txt" data-required="true" name="team"
+                                            class="form__textarea js-textarea" placeholder="Опишите команду"
+                                            autocomplete="off" maxlength="500"></textarea>
+                                        <div class="field-error-tip"><img src="./img/icons/attention.svg" alt=""></div>
+                                        <div class="form__counter">
+                                            <span class="js-letter-counter">0</span>/500 символов
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="questionnaire__item js-questionnaire-new">
+                            <div class="questionnaire__header">
+                                <span class="questionnaire__item-num">
+                                    2
+                                </span>
+                                <p class="questionnaire__item-paragraph">
+                                    Работа №<span>2</span>
+                                </p>
+                            </div>
+                            <div class="questionnaire__body">
+                                <a href="#" class="questionnaire__link js-add-project">
+                                    + Добавить работу
+                                </a>
+                            </div>
+                        </div>
+                        <div class="questionnaire__item">
+                            <div class="questionnaire__header">
+                                <span class="questionnaire__item-num">
+                                    3
+                                </span>
+                                <p class="questionnaire__item-paragraph">
+                                    Билеты на церемонию
+                                </p>
+                            </div>
+                            <div class="questionnaire__body">
+                                <div class="questionnaire__tickets">
+                                    <p class="questionnaire__tickets-text">
+                                        Для участников фестиваля билеты на церемонию предоставляются по льготной цене
+                                    </p>
+                                    <div class="questionnaire__tickets-wrap">
+                                        <a href="#" class="questionnaire__tickets-link js-counter-link"
+                                            data-counter="plus">+</a>
+                                        <span class="questionnaire__tickets-span js-counter">0 билетов</span>
+                                        <a href="#" class="questionnaire__tickets-link js-counter-link"
+                                            data-counter="minus">-</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__field mt-20">
+                            <span class="form__text-span">
+                                Способ оплаты
+                            </span>
+                            <div class="form__radio-group">
+                                <input type="radio" name="company-type" id="individual" class="custom-checkbox__input"
+                                    checked>
+                                <label class="custom-checkbox__label" for="individual">
+                                    Физическое лицо
+                                </label>
+                                <input type="radio" name="company-type" id="entity" class="custom-checkbox__input">
+                                <label class="custom-checkbox__label" for="entity">
+                                    Юридическое лицо
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__field mt-20">
+                            <span class="form__text-span">
+                                Промокод
+                            </span>
+                            <input id="promocode" type="text" data-type="txt" name="promocode" class="form__text-input"
+                                placeholder="Введите промокод" autocomplete="off">
+                        </div>
+                        <button class="form__submit">
+                            Подтверждение оплаты
+                        </button>
+                        <div class="form-error-tip">Обязательное поле для заполнения</div>
+                    </form>
+                </div>
+            </div>
+            <div class="section__info-item">
+                <div class="section__info-header">
+                    <span class="section__info-num">
+                        2
+                    </span>
+                    <p class="section__info-paragraph">
+                        Оплаченные заявки
+                    </p>
+                </div>
+                <div class="section__info-body">
+                    <div class="questionnaire__item">
+                        <div class="questionnaire__header">
+                            <span class="questionnaire__item-num">
+                                1
+                            </span>
+                            <p class="questionnaire__item-paragraph">
+                                Работа №1
+                            </p>
+                            <a href="./editor.html" class="questionnaire__item-link">
+                                Редактировать
+                            </a>
+                        </div>
+                        <div class="questionnaire__body">
+                            <div class="form__field">
+                                <span class="form__text-span">
+                                    Номицация
+                                </span>
+                                <div class="form__text-input">
+                                    Спортивный видеоролик
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <span class="form__text-span">
+                                    Название работы
+                                </span>
+                                <div class="form__text-input">
+                                    Супер спорт название какое-то
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <span class="form__text-span">
+                                    Ссылка на работу
+                                </span>
+                                <div class="form__text-input">
+                                    yandex.ru/123
+                                </div>
+                            </div>
+                            <p class="form__description">
+                                Ссылки принимаются на Google drive, Яндекс Диск, Vimeo, Youtube
+                            </p>
+                            <div class="form__field">
+                                <span class="form__text-span">
+                                    Участники
+                                </span>
+                                <div class="wrap">
+                                    <div class="form__textarea">
+                                        Текст для проверки
+                                    </div>
+                                    <div class="form__counter">
+                                        0/500 символов
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@@include('blocks/aside.html')
+@@include('blocks/footer.html')

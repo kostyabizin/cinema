@@ -1,0 +1,137 @@
+.questionnaire
+    .form__submit
+        max-width: 30rem
+    &__item
+        width: 100%
+        margin-top: 4rem
+        border: .1rem solid var(--dark-color)
+    &__header
+        width: 100%
+        height: 6rem
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        border-bottom: .1rem solid var(--dark-color)
+        background-color: var(--light-color)
+    &__item-num
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        flex-shrink: 0
+        width: 6rem
+        height: 6rem
+        border-right: .1rem solid var(--dark-color)
+    &__item-paragraph
+        flex: 1 0 auto
+        text-align: center
+    &__item-link
+        display: inline-flex
+        align-items: center
+        justify-content: space-around
+        flex: 1 0 auto
+        max-width: 20rem
+        height: 6rem
+        border-left: .1rem solid var(--dark-color)
+        text-decoration: none
+        text-transform: uppercase
+    &__body
+        width: 100%
+        padding: 2rem
+        .form__field .wrap 
+            display: flex
+            flex-direction: column
+            width: 100%
+            .field-error-tip
+                top: 12%
+        .form__chbox-group
+            margin-top: 4rem
+    &__link
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        height: 6rem
+        width: 100%
+        border: .1rem solid var(--dark-color)
+        text-decoration: none
+    &__tickets
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__tickets-text
+        flex: 1 0 auto
+        max-width: 38rem
+        margin-right: 2rem
+    &__tickets-wrap
+        display: flex
+        flex: 1 0 14rem
+        border: .1rem solid var(--dark-color)
+    &__tickets-link
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        flex-shrink: 0
+        width: 6rem
+        height: 6rem
+        text-decoration: none
+    &__tickets-span
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        flex: 1 0 auto
+        max-width: 14rem
+        border-left: .1rem solid var(--dark-color)
+        border-right: .1rem solid var(--dark-color)
+    &__rightside
+        .dropdown
+            &__menu
+                justify-content: flex-start
+                align-items: flex-start
+                position: relative
+                width: 100%
+                height: 6rem
+                border: 0
+                &.opened
+                    .icon
+                        background-color: var(--dark-color)
+                        svg
+                            transform: scale(1,-1)
+                            path
+                                stroke: var(--light-color)
+            &__link
+                display: flex
+                width: 100%
+                .icon
+                    display: inline-flex
+                    align-items: center
+                    justify-content: center
+                    flex-shrink: 0
+                    width: 6rem
+                    height: 6rem
+                    border: .1rem solid var(--dark-color)
+                    border-left: 0
+                    transition: all .2s ease
+                    svg
+                        width: 2.4rem
+                        height: 2.4rem
+                        path
+                            stroke: var(--dark-color)
+                    &.opened
+                        background-color: var(--dark-color)
+                        svg
+                            transform: scale(1,-1)
+                            path
+                                stroke: var(--light-color)
+            &__list
+                transform: translate(0, 6rem)
+                max-height: 40rem
+                scrollbar-color: var(--dark-color) var(--light-color);
+                li
+                    height: 6rem
+                &::-webkit-scrollbar-track
+                    background-color: var(--light-color)
+                    border-left: 0.1rem solid var(--dark-color)
+                &::-webkit-scrollbar
+                    width: 2rem
+                    background-color: var(--light-color)
+                &::-webkit-scrollbar-thumb 
+                    background-color: var(--dark-color)	

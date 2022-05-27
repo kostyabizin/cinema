@@ -1,0 +1,124 @@
+@charset 'UTF-8';
+/* Slider */
+/* .slick-loading .slick-list
+{
+    background: #fff url('/img/ajax-loader.gif') center center no-repeat;
+} */
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    position: absolute;
+    font-size: 0;
+    color: transparent;
+    display: block;
+    width: 7.2rem;
+    height: 7.2rem;
+    flex-shrink: 0;
+    background-size: 95% 95%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all .25s ease;
+    z-index: 5;
+}
+
+.slick-prev
+{
+    top: 50%;
+    left: -7rem;
+}
+
+.slick-next
+{
+    top: 50%;
+    right: -7rem;
+}
+
+.slick-prev {
+    /* background-image: url('/img/icons/arrow-left.svg'); */
+    transform: translate(-50%, -50%);
+}
+
+.slick-next {
+    /* background-image: url('/img/icons/arrow-right.svg'); */
+    transform: translate(50%, -50%);
+}
+
+
+.slick-prev:hover
+{
+    outline: none;
+    transform: translate(-70%, -50%);
+}
+
+.slick-next:hover
+{
+    outline: none;
+    transform: translate(70%, -50%);
+}
+
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 5.5rem;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -2.5rem;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 2rem;
+    height: 2rem;
+    margin: 0 .5rem;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+
+    display: block;
+
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: transparent;
+    border: .2rem solid #551532;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: all .25s ease;
+}
+.slick-dots li button:hover
+{
+    background-color: #551532;
+    outline: none;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #551532;
+}

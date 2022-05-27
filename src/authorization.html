@@ -1,0 +1,128 @@
+@@include('blocks/header.html')
+<section class="authorization section__content">
+    @@include('blocks/leftside.html')
+    <div class="authorization__rightside section__rightside">
+        <div class="section__info-block js-custom-scroll">
+            <div class="section__info-item">
+                <div class="section__info-header">
+                    <span class="section__info-num">
+                        1
+                    </span>
+                    <p class="section__info-paragraph">
+                        Вход
+                    </p>
+                </div>
+                <div class="section__info-body">
+                    <form class="form form-login">
+                        <div class="form__field">
+                            <span class="form__text-span">
+                                E-mail
+                            </span>
+                            <input id="login-email" type="text" data-type="email" data-required="true" name="email"
+                                class="form__text-input" placeholder="Введите e-mail" autocomplete="off">
+                            <div class="field-error-tip"><img src="./img/icons/attention.svg" alt=""></div>
+                        </div>
+                        <div class="form__field">
+                            <span class="form__text-span">
+                                Пароль
+                            </span>
+                            <input id="login-password" type="password" data-type="pass" data-required="true"
+                                name="password" class="form__text-input" placeholder="Введите пароль"
+                                autocomplete="off">
+                            <div class="field-error-tip"><img src="./img/icons/attention.svg" alt=""></div>
+                        </div>
+                        <button class="form__submit">
+                            Войти
+                        </button>
+                        <a href="#registration" class="form__link js-form-link" data-form="registration">
+                            Регистрация
+                        </a>
+                        <div class="form-error-tip">Обязательное поле для заполнения</div>
+                    </form>
+                    <form class="form form-registration">
+                        <div class="form__field">
+                            <span class="form__text-span">
+                                E-mail
+                            </span>
+                            <input id="registration-email" type="text" data-type="email" data-required="true" name="email"
+                                class="form__text-input" placeholder="Введите e-mail" autocomplete="off">
+                            <div class="field-error-tip"><img src="./img/icons/attention.svg" alt=""></div>
+                        </div>
+                        <div class="form__field">
+                            <span class="form__text-span">
+                                Пароль
+                            </span>
+                            <input id="registration-password" type="password" data-type="pass" data-required="true"
+                                name="password" class="form__text-input" placeholder="Введите пароль"
+                                autocomplete="off">
+                            <div class="field-error-tip"><img src="./img/icons/attention.svg" alt=""></div>
+                        </div>
+                        <div class="form__field">
+                            <span class="form__text-span">
+                                Повторите пароль
+                            </span>
+                            <input id="confirm-password" type="password" data-type="pass" data-required="true"
+                                name="password" class="form__text-input" placeholder="Повторите пароль"
+                                autocomplete="off" data-pass-compare-input="#registration-password">
+                            <div class="field-error-tip"><img src="./img/icons/attention.svg" alt=""></div>
+                        </div>
+                        <div class="form__input-wrap">
+                            <div class="form__field">
+                                <span class="form__text-span">
+                                    Имя
+                                </span>
+                                <input id="registration-firstName" type="text" data-type="name" data-required="true"
+                                    name="firstName" class="form__text-input" placeholder="Введите имя"
+                                    autocomplete="off">
+                                <div class="field-error-tip"><img src="./img/icons/attention.svg" alt=""></div>
+                            </div>
+                            <div class="form__field">
+                                <span class="form__text-span">
+                                    Фамилия
+                                </span>
+                                <input id="registration-lastName" type="text" data-type="name" data-required="true"
+                                    name="lastName" class="form__text-input" placeholder="Введите фамилию"
+                                    autocomplete="off">
+                                <div class="field-error-tip"><img src="./img/icons/attention.svg" alt=""></div>
+                            </div>
+                            <div class="form__field">
+                                <span class="form__text-span">
+                                    Компания
+                                </span>
+                                <input id="registration-company" type="text" data-type="txt" data-required="true"
+                                    name="company" class="form__text-input" placeholder="Введите название компании"
+                                    autocomplete="off">
+                                <div class="field-error-tip"><img src="./img/icons/attention.svg" alt=""></div>
+                            </div>
+                            <div class="form__field">
+                                <span class="form__text-span">
+                                    Способ оплаты
+                                </span>
+                                <div class="form__radio-group">
+                                    <input type="radio" name="company-type" id="individual" class="custom-checkbox__input"
+                                    checked>
+                                    <label class="custom-checkbox__label" for="individual">
+                                        Физическое лицо
+                                    </label>
+                                    <input type="radio" name="company-type" id="entity" class="custom-checkbox__input">
+                                    <label class="custom-checkbox__label" for="entity">
+                                        Юридическое лицо
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="form__submit">
+                             Регистрация
+                        </button>
+                        <a href="#login" class="form__link js-form-link" data-form="login">
+                            Войти
+                        </a>
+                        <div class="form-error-tip">Обязательное поле для заполнения</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@@include('blocks/aside.html')
+@@include('blocks/footer.html')
