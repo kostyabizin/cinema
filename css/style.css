@@ -2409,9 +2409,9 @@ body.mob-nav-is-opened {
   right: 0;
 }
 
-/* * {
+* {
     cursor: none;
-} */
+}
 
 :root {
   --dark-color: #000;
